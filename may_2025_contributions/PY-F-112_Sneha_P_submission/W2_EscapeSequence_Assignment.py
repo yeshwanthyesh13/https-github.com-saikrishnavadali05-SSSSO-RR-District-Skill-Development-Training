@@ -111,7 +111,7 @@ time.sleep(0.9)
 print("Sairam!", end='', flush=True)
 #29.Write a program that counts the number of escape sequences in a given string and outputs their types.
 s = "Sairam\\\\Namaskaram\\nHow are you?\\t Please feel free\\nTake some prasadam\\b\\b\\bJaiSaiRam\\a aum"
-print("Escape counts in the string:")
+print("Escape counts in the string :")
 print("\\\\:", s.count("\\\\"))
 print("\\n:", s.count("\\n"))
 print("\\t:", s.count("\\t"))
