@@ -113,20 +113,24 @@ for element in elements:
 
 #17.Remove all punctuation from a sentence using string.punctuation
 import string
-sen = "Sairam, Welcome! How are you? Aren't you a member of this samithi"
+sen = "Sairam, Welcome! How are you? Aren't you a member of this samithi?"
 for p in string.punctuation:
     sen = sen.replace(p, '')
 print(sen)
 
 #18.Extract the domain from an email address using slicing and split()
 email=input("Enter email id : ")
-split_email = email.split('@')  
-domain = split_email[-1]        
-print(domain)
+if '@' in email and email.count('@') == 1 and email.index('@') != 0 and email.index('@') != len(email) - 1:
+    domain = email.split('@')[-1]  
+    print("Domain:", domain)
+else:
+    print("Invalid email address")
 
 #19.String starts with a vowel and ends with a consonant.
-word=input("Enter a word:")
-if word[0].lower() in "aeiou" and word[-1].lower() not in "aeiou":
+word=input("Enter a word:").strip()
+if not word:
+    print("No input given")
+elif word[0].lower() in "aeiou" and word[-1].lower() not in "aeiou":
     print("Yes,string starts with a vowel and ends with a consonant.")
 else:
     print("No,condition not met")
