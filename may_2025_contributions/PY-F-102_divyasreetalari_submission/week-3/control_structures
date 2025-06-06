@@ -1,4 +1,4 @@
-"""
+
 def positive_negative_zero():
     num = int(input("enter a number:"))
     if num > 0:
@@ -39,8 +39,7 @@ def checkevn_odd():
     else:
         print("number is an odd number ")
 checkevn_odd()          
-"""
-"""
+
 def table():
     num = int(input("enter a number"))
     for i in range(1, 11):
@@ -69,7 +68,6 @@ def sum():
         n += i
         print(f"Sum of numbers from 1 to {num} is {n}")
 sum()
-"""
 
 def vovel_cons():
     x = input("enter a leter")
