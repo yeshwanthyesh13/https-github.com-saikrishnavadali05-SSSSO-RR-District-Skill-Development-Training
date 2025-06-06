@@ -13,6 +13,7 @@ print("Hello World\rPython")
 
 print('1234\b\b\b675')
 
+
 print('1234\b\b\b\b638')
 
 print("sairam ^/\\^ !!")
@@ -27,3 +28,11 @@ for number in range(0, 21):
 text = "Code"
 for i in range(len(text)):
      print(f"Character at index {i} is {text[i]}")
+
+
+def even():
+    number = 0
+    for number in range(0, 11):
+        if number % 2==0:
+            print(number)
+def even():
