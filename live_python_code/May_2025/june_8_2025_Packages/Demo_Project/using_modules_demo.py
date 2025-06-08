@@ -1,6 +1,8 @@
 import my_utils
 import math_functions
 
+from math_functions import addition
+
 my_utils.greet("Alice")
 
 a = 10
