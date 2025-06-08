@@ -36,13 +36,13 @@
 # from Demo_Project import my_utils
 # my_utils.greet("Alice")
 
-from Demo_Project.my_utils import greet
-greet("Alice")
+# from Demo_Project.my_utils import greet
+# greet("Alice")
 
-import Demo_Project.my_utils as utils
-utils.greet("Bob")
+# import Demo_Project.my_utils as utils
+# utils.greet("Bob")
 
-# import Demo_Project.from_keyword_demo
+# # import Demo_Project.from_keyword_demo
 
-import Demo_Project
+# import Demo_Project
 print(dir(Demo_Project))
