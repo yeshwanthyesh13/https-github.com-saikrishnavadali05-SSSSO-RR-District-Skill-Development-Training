@@ -1,7 +1,8 @@
 from pydantic import BaseModel, ConfigDict
 from typing import List
 
-# ✅ Model for user input (register/login)
+
+# ✅ Model for user registration/login
 class UserLogin(BaseModel):
     username: str
     password: str
@@ -15,11 +16,13 @@ class UserLogin(BaseModel):
         }
     )
 
-# ✅ Optional: model for response without password
+
+# ✅ Optional public user model (without password)
 class UserPublic(BaseModel):
     username: str
 
-# ✅ Question schema for quiz data
+
+# ✅ Model for quiz question
 class Question(BaseModel):
     id: int
     question: str
@@ -28,7 +31,8 @@ class Question(BaseModel):
     category: str
     difficulty: str
 
-# ✅ Schema for answer submission
+
+# ✅ Model for answer submission
 class Answer(BaseModel):
     question_id: int
     answer: str

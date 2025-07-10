@@ -1,11 +1,11 @@
 import httpx
 import html
 from fastapi import HTTPException
-from ..models.schemas import Question
-from ..data.db import quiz_db
+from models.schemas import Question
+from data.db import quiz_db
 
-
-async def import_questions_from_api(amount, category, difficulty):
+# ✅ Import questions from Open Trivia DB
+async def import_questions_from_api(amount: int = 10, category: int = None, difficulty: str = "easy"):
     url = f"https://opentdb.com/api.php?amount={amount}&difficulty={difficulty}&type=multiple"
     if category:
         url += f"&category={category}"
@@ -19,8 +19,8 @@ async def import_questions_from_api(amount, category, difficulty):
 
     new_questions = []
     for item in data["results"]:
-        all_options = item["incorrect_answers"] + [item["correct_answer"]]
-        shuffled = sorted([html.unescape(opt) for opt in all_options])
+        options = item["incorrect_answers"] + [item["correct_answer"]]
+        shuffled = sorted([html.unescape(opt) for opt in options])
 
         question_data = Question(
             id=len(quiz_db) + 1,
@@ -33,9 +33,10 @@ async def import_questions_from_api(amount, category, difficulty):
         quiz_db.append(question_data)
         new_questions.append(question_data)
 
-    return {"imported": len(new_questions), "questions": new_questions}
+    return new_questions
 
-def get_filtered_questions(category=None, difficulty=None):
+# ✅ Get questions with optional filters
+def get_filtered_questions(category: str = None, difficulty: str = None):
     results = quiz_db
     if category:
         results = [q for q in results if q.category.lower() == category.lower()]
@@ -43,8 +44,9 @@ def get_filtered_questions(category=None, difficulty=None):
         results = [q for q in results if q.difficulty.lower() == difficulty.lower()]
     return results
 
-def get_question_by_id(qid):
-    for question in quiz_db:
-        if question.id == qid:
-            return question
-    return None
+# ✅ Get a question by ID (optional use)
+def get_question_by_id(qid: int):
+    for q in quiz_db:
+        if q.id == qid:
+            return q
+    raise HTTPException(status_code=404, detail="Question not found")
