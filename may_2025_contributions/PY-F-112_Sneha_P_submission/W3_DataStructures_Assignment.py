@@ -75,11 +75,3 @@ print('Reverse the key and values of a dictionary :',reverseddict)
 data = [(5, 2), (1, 3), (4, 1)]
 sorted_data = sorted(data, key=lambda x: x[1])
 print('Sorted list:',sorted_data)
-#23.Create a nested dictionary representing a student's details (name, subjects, and scores) and print the average score.
-#24.Write a function that finds common elements in two lists using set operations and returns them sorted.
-#25.Use OrderedDict to implement a simple Least Recently Used (LRU) cache with capacity 3 for integer keys.
-#26.Implement a function to flatten a nested list into a single list using recursion.
-#27.Write code to count the frequency of words in a large text using a dictionary and then print the top 5 most common words.
-#28.Create a function to perform deep copy of a dictionary containing nested dictionaries without using copy.deepcopy().
-#29.Write a function that accepts any number of lists and returns a merged set of unique elements.
-#30.Implement a generator function that yields tuples of (index, value) for a list, mimicking enumerate().
