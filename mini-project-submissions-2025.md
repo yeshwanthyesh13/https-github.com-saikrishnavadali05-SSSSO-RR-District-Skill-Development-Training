@@ -4,11 +4,11 @@
 |----------------------------------------|------------------------------------------------------------------|
 | `saisrujan137`                         | ✅ Completed                                                     |
 | `Divyasreetalari`                      | 🖼️ To include output screenshots                                 |
-| `Patnaiksaiharshavardhan762`          | 🔧 To include Flask-based UI for deployment                     |
-| `SaiRam-3795`                          | 🔧 To include Flask-based UI for deployment                     |
-| `GitSindhu`                            | 🔧 To include Flask-based UI for deployment                     |
-| `Snehapandiarajan`                     | 🔧 To include Flask-based UI for deployment                     |
-| `Navya463`                             | ✨ To include more features and Flask-based UI                  |
+| `Patnaiksaiharshavardhan762`          | 🔧 To include Flask-based UI for deployment, output screenshots                      |
+| `SaiRam-3795`                          | 🔧 To include Flask-based UI for deployment, output screenshots                      |
+| `GitSindhu`                            | 🔧 To include Flask-based UI for deployment, output screenshots                      |
+| `Snehapandiarajan`                     | 🔧 To include Flask-based UI for deployment, output screenshots                      |
+| `Navya463`                             | ✨ To include more features and Flask-based UI, output screenshots                  |
 | `praveena`                             | ⏳ Yet to raise Pull Request                                     |
 | `Ziya`                                 | ⏳ Yet to raise Pull Request                                     |
 
