@@ -1,6 +1,6 @@
-# 🌟 Mini Project Status - AgenticPrompt Team
+# 🌟 Mini Project Status - Python and Prompt Engineering - Skill Development Training
 
-| **Team Member**                         | **Status**                                                      |
+| **Trainee**                         | **Status**                                                      |
 |----------------------------------------|------------------------------------------------------------------|
 | `saisrujan137`                         | ✅ Completed                                                     |
 | `Divyasreetalari`                      | 🖼️ To include output screenshots                                 |
